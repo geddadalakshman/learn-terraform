@@ -12,3 +12,10 @@ variable "test-var-tfvars" {}
 output "test-var-tfvars-output" {
     value = var.test-var-tfvars
 }
+
+#variable from .auto.tfvars file
+variable "test-var-tfvars" {}
+
+output "test-var-tfvars-output" {
+    value = var.test-var-tfvars
+}
