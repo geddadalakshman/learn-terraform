@@ -16,6 +16,6 @@ output "test-var-tfvars-output" {
 #variable from .auto.tfvars file
 variable "test-var-tfvars" {}
 
-output "test-var-tfvars-output" {
+output "test-var-tfvars-output-auto" {
     value = var.test-var-tfvars
 }
