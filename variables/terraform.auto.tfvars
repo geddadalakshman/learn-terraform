@@ -1,1 +1,1 @@
-test-var-tfvars = "hello-from-auto-tfvars"
+test-var-tfvars-auto = "hello-from-auto-tfvars"
