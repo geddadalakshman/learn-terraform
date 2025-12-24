@@ -6,6 +6,7 @@ output "test-var-output" {
     value = var.test-var
 }
 
+########################################
 # variable from .tfvars file
 variable "test-var-tfvars" {}
 
@@ -13,6 +14,7 @@ output "test-var-tfvars-output" {
     value = var.test-var-tfvars
 }
 
+########################################
 #variable from .auto.tfvars file
 variable "test-var-tfvars-auto" {}
 
@@ -20,6 +22,7 @@ output "test-var-tfvars-output-auto" {
     value = var.test-var-tfvars-auto
 }
 
+########################################
 #variables from command line
 #terraform apply -var="test-var-cli-1=hello-from-cli-1"
 variable "test-var-cli-1" {}
@@ -27,6 +30,7 @@ output "test-var-cli-1-output" {
     value = var.test-var-cli-1
 }
 
+########################################
 #variables from a var-file
 #terraform apply -var-file="variables/test.tfvars"
 variable "env" {}
@@ -39,10 +43,13 @@ output "test-var-varfile-output2" {
     value = var.terraform
 }
 
+##########################################
+#normal variables
 variable "sample1" {
     default = "Hello, Terraform!"
 }
 
+#list of values
 variable "sample2" {
 default = [
 "Hello",
@@ -52,6 +59,7 @@ true,
 ]
 }
 
+#map of values
 variable "sample3" {
 default = {
 string = "Hello",
