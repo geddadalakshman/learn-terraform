@@ -21,7 +21,20 @@ output "test-var-tfvars-output-auto" {
 }
 
 #variables from command line
+#terraform apply -var="test-var-cli-1=hello-from-cli-1"
 variable "test-var-cli-1" {}
 output "test-var-cli-1-output" {
     value = var.test-var-cli-1
+}
+
+#variables from a var-file
+#terraform apply -var-file="variables/test.tfvars"
+variable "env" {}
+output "test-var-varfile-output1" {
+    value = var.env
+}
+
+variable "terraform" {}
+output "test-var-varfile-output2" {
+    value = var.terraform
 }

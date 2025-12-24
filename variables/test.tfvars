@@ -1,0 +1,2 @@
+env = "dev"
+terraform = true
