@@ -71,3 +71,5 @@ boolean = true
 output "mixed-variable-output" {
     value = "This is ${var.sample1}, this is your ${var.sample2[3]}, yes you are ${var.sample3["boolean"]}"
 }
+
+##########################################
