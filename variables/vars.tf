@@ -19,3 +19,9 @@ variable "test-var-tfvars-auto" {}
 output "test-var-tfvars-output-auto" {
     value = var.test-var-tfvars-auto
 }
+
+#variables from command line
+variable "test-var-cli-1" {}
+output "test-var-cli-1-output" {
+    value = var.test-var-cli-1
+}
