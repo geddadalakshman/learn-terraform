@@ -38,3 +38,28 @@ variable "terraform" {}
 output "test-var-varfile-output2" {
     value = var.terraform
 }
+
+variable "sample1" {
+    default = "Hello, Terraform!"
+}
+
+variable "sample2" {
+default = [
+"Hello",
+1000, 
+true,
+"World"
+]
+}
+
+variable "sample3" {
+default = {
+string = "Hello",
+number = 100,
+boolean = true
+}
+}
+
+output "mixed-variable-output" {
+    value = "This is ${var.sample1}, this is your ${var.sample2[3]}, yes you are ${var.sample3["boolean"]}"
+}
