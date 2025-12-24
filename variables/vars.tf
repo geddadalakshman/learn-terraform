@@ -73,3 +73,12 @@ output "mixed-variable-output" {
 }
 
 ##########################################
+#sensitive variable
+variable "sensitive_var" {
+    type      = string
+    sensitive = true
+    default   = "This is a sensitive variable"
+}
+output "sensitive_var_output" {
+    value = var.sensitive_var
+}
